@@ -1,7 +1,22 @@
 #!/bin/bash
 
+# __ __ __    ________  ______    ______   _______    __  __   ________   ______    ______      
+#/_//_//_/\  /_______/\/_____/\  /_____/\ /______/\  /_/\/_/\ /_______/\ /_____/\  /_____/\     
+#\:\\:\\:\ \ \__.::._\/\:::_ \ \ \::::_\/_\::::__\/__\:\ \:\ \\::: _  \ \\:::_ \ \ \:::_ \ \    
+# \:\\:\\:\ \   \::\ \  \:(_) ) )_\:\/___/\\:\ /____/\\:\ \:\ \\::(_)  \ \\:(_) ) )_\:\ \ \ \   
+#  \:\\:\\:\ \  _\::\ \__\: __ `\ \\::___\/_\:\\_  _\/ \:\ \:\ \\:: __  \ \\: __ `\ \\:\ \ \ \  
+#   \:\\:\\:\ \/__\::\__/\\ \ `\ \ \\:\____/\\:\_\ \ \  \:\_\:\ \\:.\ \  \ \\ \ `\ \ \\:\/.:| | 
+# __ \_______\/\________\/ \_\/ \_\/ \_____\/ \_____\/   \_____\/ \__\/\__\/ \_\/ \_\/ \____/_/ 
+#/_/\ /_/\ /_____/\ /__/\ /__/\                                                                 
+#\:\ \\ \ \\:::_ \ \\::\_\\  \ \                                                                
+# \:\ \\ \ \\:(_) \ \\:. `-\  \ \                                                               
+#  \:\_/.:\ \\: ___\/ \:. _    \ \                                                              
+#   \ ..::/ / \ \ \    \. \`-\  \ \                                                             
+#    \___/_(   \_\/     \__\/ \__\/                                                             
+#                                                                                              
+#
 # Secure WireGuard server installer for Debian, Ubuntu, CentOS, Fedora and Arch Linux
-# https://github.com/angristan/wireguard-install
+# derived from https://github.com/angristan/wireguard-install
 
 function isRoot() {
 	if [ "${EUID}" -ne 0 ]; then
@@ -59,7 +74,7 @@ function initialCheck() {
 
 function installQuestions() {
 	echo "Welcome to the WireGuard installer!"
-	echo "The git repository is available at: https://github.com/angristan/wireguard-install"
+	echo "The git repository is available at: https://github.com/rdbh/wireguard-install"
 	echo ""
 	echo "I need to ask you a few questions before starting the setup."
 	echo "You can leave the default options and just press enter if you are ok with them."
